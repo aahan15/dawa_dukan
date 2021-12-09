@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #c9ebff;
+}
+main{
+    width: 165%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+}
+main > div{
+    font-family: fangsong;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background: #c9ebff;
+}
+.div1 > img{
+    max-width: 100%;
+    min-width: 100%;
+}
+i{
+    margin: 2px;
+}
+header{
+    width: 50%;
+    margin: 15px auto;
+    background: #b4d2ff;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+}
+.form-style-3{
+	width: 600px;
+    font-family: fangsong;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #b4d2ff;
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+    background: #c9ebff;
+}
+.form-style-3 label > span{
+	float: left;
+	width: 100px;
+	color: #59C2C5;
+	font-weight: bold;
+	font-size: 15px;
+	text-shadow: 1px 1px 1px #fff;
+    background: #c9ebff;
+}
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #b4d2ff;
+    
+	padding: 20px;
+	background: #c9ebff;
+	box-shadow: inset 0px 0px 15px #CCDCF5;
+	-moz-box-shadow: inset 0px 0px 15px #CCDCF5;
+	-webkit-box-shadow: inset 0px 0px 15px #CCDCF5;
+}
+.form-style-3 fieldset legend{
+	color: #5f83fc;
+	border-top: 1px solid #b4d2ff;
+	border-left: 1px solid #b4d2ff;
+	border-right: 1px solid #b4d2ff;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #c9ebff;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+	font-weight: normal;
+	font-size: 12px;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+    
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #B5E6F5;
+	outline: none;
+	color: black;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #8ACADD;
+	-moz-box-shadow: inset 1px 1px 4px #8ACADD;
+	-webkit-box-shadow: inset 1px 1px 4px #8ACADD;
+	background: #BEDAF3;
+	width:50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: #4398E4;
+	border: 1px solid #648DCE;
+	padding: 5px 15px 5px 15px;
+	color: #BEDAF3;
+	box-shadow: inset -1px -1px 3px #B3CDF4;
+	-moz-box-shadow: inset -1px -1px 3px #B3CDF4;
+	-webkit-box-shadow: inset -1px -1px 3px #B3CDF4;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+.required{
+	color:red;
+	font-weight:normal;
+}
+footer{
+    width: 95%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-rows: repeat(5,80px);
+    grid-gap: 10px;
+    margin-top: 100px;
+    padding: 10px;
+	grid-auto-rows: 80px;
+}
+footer > div{
+    background: #b4d2ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: fangsong;
+    font-size: 1.4em;
+}
+footer > div > div{
+    background: black;
+	width: 15%;
+	text-align:center;
+}
+.content > div{
+    background: #b4d2ff;
+    color: black;
+	width: 16.66%;
+    justify-content: center;
+    display: flex;
+}
+.form-1{
+	width: 16.66%;
+    display: flex;
+    justify-content: center;
+    background: #b4d2ff;
+}
+.form-1 > div{
+    background: #b4d2ff;
+    color: black;
+}
+.content > div > i{
+    background: #b4d2ff;
+    color: black;
+}
+.form-1 > div > i{
+    background: #b4d2ff;
+    color: black;
+}

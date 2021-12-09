@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="./images/med.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orienta&family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="twohalves">
+        <div class="wc">
+            <div class="welcome">
+                <div class="weltxt">Welcome to Dawa Dukan</div>
+                <div class="weltxt1">
+                    <img src="../images/dd.gif" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <div class="wc">
+            <div class="nav">
+                <div class="topnav">
+                    <a href="/">Discover</a>
+                </div>
+            </div>
+            <div class="signup">
+                <form action="/login" method="POST">
+                    <div class="formhead">
+                        <div>Login</div>
+                       
+                    </div>
+                    <div class="formbase">
+
+                        <label for="email"></label>
+                        <input type="email" placeholder="Enter email" name="email" required>
+
+                        <label for="psw"></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    </div>
+                    <div class="forgot">
+                        <div>Forgot password?</div>
+                        <div onclick="location.href='../signup';" style="cursor: pointer;">Sign-up</div>
+                    </div>
+                    <%if(message){%>
+                        <p style="background: #b4d2ff;height: 4vh;text-align: center;">
+                            <%= message %>
+                        </p>
+                    <%}%>
+                            <div class="submit" style="background: #b4d2ff;"><button type="submit"
+                                    class="signupbtn">Login
+                            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function alert(t) {
+            alert(t);
+        }
+    </script>
+</body>
+
+</html>

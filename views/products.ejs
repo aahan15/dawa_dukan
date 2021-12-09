@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="icon" href="./images/med.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orienta&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <main>
+        <div class="div2" onclick="location.href='/admin_order';" style="cursor:pointer;color: gray;"><i class="fa fa-bars"></i>Orders</div>
+        <div class="div4" onclick="location.href='/products';" style="cursor:pointer;"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Products</div>
+        <div class="div5" onclick="location.href='/admin_login';" style="cursor:pointer;"><i class="fa fa-sign-out" aria-hidden="true"></i>LogOut</div>
+    </main>
+    <header>
+        <div class="form-style-3">
+            <form action="/products" method="POST" style="border-radius: 10px;background: #b4d2ff;">
+                <fieldset>
+                    <legend>Product Information</legend>
+                    <label for="name"><span>Name <span class="required"
+                                style="background: #BEDAF3;">*</span></span><input type="text" class="input-field"
+                            name="name" value="" /></label>
+                    <label for="price"><span>Price <span class="required"
+                                style="background: #BEDAF3;">*</span></span><input type="number" class="input-field"
+                            name="price" value="" /></label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Description</legend>
+                    <label for="desc"><span>Description <span class="required" style="background: #BEDAF3;">*</span></span><textarea name="desc"
+                            class="textarea-field"></textarea></label>
+                    <label><span> </span><input type="submit" value="Add" /></label>
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <footer>
+        <div style="background: black;">
+            <div>Status</div>
+            <div>Name</div>
+            <div>Price</div>
+            <div>Description</div>
+            <div>Picture</div>
+            <div>Delete</div>
+        </div>
+        <% docs.forEach(function(thing){ %>
+            <% let id = thing._id %>
+                <div class="content">
+                    <div><i class="fa fa-search" aria-hidden="true"></i>View</div>
+                    <div>
+                        <%= thing.name %>
+                    </div>
+                    <div>₹<%= thing.price %>
+                    </div>
+                    <div style="font-size: 1rem;">
+                        <%= thing.desc %>
+                    </div>
+                    <div>X</div>
+                    <form action="/delete-products/<%= thing._id %>" method="POST" class="form-1">
+                        <button type="submit" style="cursor: pointer;"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <% }) %>
+    </footer>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="icon" href="./images/med.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orienta&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Admin</title>
+</head>
+<body>
+    <main>
+        <div class="div2"><i class="fa fa-bars"></i>Orders</div>
+        <div class="div4" onclick="location.href='/products';" style="cursor:pointer;color: gray;"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Products</div>
+        <div class="div5" onclick="location.href='/admin_login';" style="cursor:pointer;"><i class="fa fa-sign-out" aria-hidden="true"></i>LogOut</div>
+    </main>
+    <header>
+        <div style="background: black;">
+            <div>Status</div>
+            <div>From</div>
+            <div>Address</div>
+            <div>Contact</div>
+            <div>Price</div>
+            <div>Delete</div>
+        </div>
+        <% docs.forEach(function(thing){ %>
+        <div class="content">
+            <div>
+                <form action="/generatepdf" method="post">
+                    <input type="hidden" name="id" value=<%= thing._id %>>
+                    <input type="hidden" name="price" value=<%= thing.price %>>
+                    <input type="hidden" name="email" value=<%= thing.email %>>
+                    <input type="hidden" name="address" value="<%= thing.address %>">
+                    <input type="hidden" name="contact" value="<%= thing.contact %>">
+                    <input type="hidden" name="fullname" value="<%= thing.fullname %>">
+                    <button type="submit" style="all: unset; cursor: pointer;"><i class="fa fa-search" aria-hidden="true"></i>View</button>
+                </form>
+            </div>
+            <div><%= thing.fullname %></div>
+            <div><%= thing.address %></div>
+            <div><%= thing.contact %></div>
+            <div>₹ 300</div>
+            <div>
+                <form action="/delete-order/<%= thing._id %>" method="post">
+                    <button type="submit" style="all: unset;cursor: pointer;">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <% }) %>
+    </header>
+</body>
+</html>

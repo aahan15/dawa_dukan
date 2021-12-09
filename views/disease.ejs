@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/disease.css">
+    <link rel="icon" href="./images/med.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orienta&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DAWA DUKAN</title>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="head">DAWA DUKAN.</div>
+        <div class="toggle-section">
+            <div onclick="location.href='/dashb';" style="cursor:pointer;"><i class="fa fa-home"></i>Home</div>
+            <div>|</div>
+            <div onclick="" style="cursor:pointer;"><i class="fa fa-search"></i>AboutUs</div>
+            <div>|</div>
+            <div onclick="location.href='/cart';" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i>Cart</div>
+        </div>
+        <div class="toggle-section">
+            <div>Hello <%= user %>,<i class="fa fa-user"></i></div>
+            <div>|</div>
+            <div onclick="location.href='/logout';" style="cursor:pointer;"><i class="fa fa-sign-out"></i>Log Out</div>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: center;margin: 40px;">
+        <div class="div2">
+            <div class="pd"><img src="../images/disease1.png" alt=""></div>
+            <div>
+                <pre>Disease 
+Identification.
+<span style="font-size: 3vh;font-family: Verdana, Geneva, Tahoma, sans-serif;background: #b4d2ff;">Check your health.</span></pre>
+            </div>
+            
+        </div>
+    </div>
+
+    
+        <div id="wrapper" width="100%" height="100%" >
+            <iframe src="https://www.healthdirect.gov.au/symptom-checker/tool?symptom=GNRC"
+                style="position: static;" frameborder="0" width="100%" height="100%"></iframe></div>
+
+    
+    
+</body>
+
+</html>

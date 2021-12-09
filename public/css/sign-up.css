@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    background: #c9ebff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.twohalves{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wc{
+    display: flex;
+    flex-direction: column;
+
+}
+.welcome{
+    background: #b4d2ff;
+    width: 70%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+.weltxt{
+    background: #b4d2ff;
+    font-family: fangsong;
+    font-size: 3.5rem;
+    color: #27b384;
+}
+.weltxt1{
+    background: #b4d2ff;
+    margin: 10px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.weltxt1 > img{
+    width: 90%;
+    height: 90%;
+    background: #b4d2ff;
+}
+.nav{
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.topnav{
+    overflow: hidden;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    left: auto;
+}
+.topnav a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+}
+.topnav a:hover {
+    background-color: #b4d2ff;
+    color: black;
+}
+
+.formhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    height: 20%;
+}
+.formhead > div{
+    font-family:"Lucida Console", "Courier New", monospace;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b4d2ff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.formhead > div >img{
+    height: 100%;
+    width: 40%;
+    background: #b4d2ff;
+}
+.forgot{
+    display: flex;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: #b4d2ff;
+    height: 12%;
+    margin-top: 25px;
+}
+
+.forgot > div{
+    background: #b4d2ff;
+    text-align: center;
+}
+.submit{
+    background: #b4d2ff;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.submit > button{
+    background-color: #B9EBC7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    height: 100%;
+    border: 0;
+    width: 35%;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+.wc-1{
+    display: flex;
+    flex-direction: column;
+}
+.signup{
+    background: #b4d2ff;
+    width: 75%;
+    height: 70%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.formbase{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    background: #b4d2ff;
+}
+input[type=text], input[type=password]{
+    border: none;
+    background: whitesmoke;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    padding: 7px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1rem;
+}
+form{
+    background: #b4d2ff;
+}
+label{
+    background: #b4d2ff;
+}
